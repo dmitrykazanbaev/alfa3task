@@ -1,0 +1,7 @@
+server.port: 8082
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://130.193.48.14:5432/alfa_battle"
+    username: "alfa_battle"
+    password: "qwe123"
