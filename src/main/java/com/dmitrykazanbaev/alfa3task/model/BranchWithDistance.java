@@ -1,13 +1,17 @@
 package com.dmitrykazanbaev.alfa3task.model;
 
-import lombok.Data;
+import java.math.BigDecimal;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+public interface BranchWithDistance {
+    Integer getId();
 
-@Entity
-@Data
-public class BranchWithDistance extends Branch {
-    @Column
-    private Long distance;
+    String getTitle();
+
+    BigDecimal getLon();
+
+    BigDecimal getLat();
+
+    String getAddress();
+
+    Long getDistance();
 }

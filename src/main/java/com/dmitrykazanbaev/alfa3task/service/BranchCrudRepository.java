@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
 @Service
-public interface BranchCrudRepository<T extends Branch> extends CrudRepository<T, Integer> {
+public interface BranchCrudRepository extends CrudRepository<Branch, Integer> {
     @Query(value = "select \n" +
             "  br.*, \n" +
             "  round(\n" +

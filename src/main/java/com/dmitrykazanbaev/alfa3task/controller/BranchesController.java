@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 public class BranchesController {
 
-    private final BranchCrudRepository<? extends Branch> repository;
+    private final BranchCrudRepository repository;
 
     @GetMapping("{branchId}")
     public Branch getBranchById(@PathVariable("branchId") Integer branchId) {
