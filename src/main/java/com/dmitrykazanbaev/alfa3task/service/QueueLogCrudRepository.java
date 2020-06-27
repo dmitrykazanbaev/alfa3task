@@ -30,7 +30,7 @@ public interface QueueLogCrudRepository extends CrudRepository<QueueLog, Integer
             "  and :hour = EXTRACT(\n" +
             "    HOUR \n" +
             "    FROM \n" +
-            "      start_time_of_wait\n" +
+            "      end_time_of_wait\n" +
             "  ) \n" +
             "  and branches_id = :id")
     List<Integer> predict(@Param("data") Integer data, @Param("hour") Integer hour, @Param("id") Integer id);
